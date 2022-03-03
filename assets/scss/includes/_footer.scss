@@ -1,5 +1,4 @@
 .footer-wrapper{
-    padding: 2rem 0;
     text-align: center;
     background-color: rgba(255, 249, 249, 0.411);
     .footer-section{
@@ -12,6 +11,7 @@
         @include media-min-xl{
             width: 80%;
             margin: 0 auto;
+            padding: 4rem 0;
         }
         .logo{
             display: flex;
@@ -100,7 +100,6 @@
         font-size: 18px;
         font-weight: 500;
         @include media-min-xl{
-            padding: 2rem 0;
             font-size: 20px;
         }
     }

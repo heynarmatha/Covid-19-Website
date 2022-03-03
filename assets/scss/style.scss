@@ -532,7 +532,7 @@
             width: 50%;
         }
         @include media-min-xl-x{
-            width: 40%;
+            width: 53%;
         }
         h3{
             font-size: 1.6rem;
@@ -566,7 +566,7 @@
                     padding: 18px;
                 }
                 @include media-min-xl{
-                    padding: 30px;
+                    padding: 25px;
                 }
             }
             button{
@@ -588,7 +588,7 @@
                     right: 2%;
                 }
                 @include media-min-xl{
-                    padding: 20px 60px;
+                    padding: 15px 60px;
                     font-size: 22px;
                     top: 10%;
                 }
