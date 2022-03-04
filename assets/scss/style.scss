@@ -150,6 +150,7 @@
 .details-corona-wrapper{
     padding: 15px;
     background-color: #FFFFFF;
+    position: relative;
     .details-section{
         @include media-min-md{
             display: flex;
@@ -229,14 +230,34 @@
             }
         }
     }
+    .postion-2{
+        display: none;
+        @include media-min-xl{
+            display: block;
+            position: absolute;
+            top: 70%;
+            right: 0;
+        }
+    }
 }
 
 .contagion-section-wrapper{
     padding: 15px;
     background-color: #FFFFFF;
+    position: relative;
     @include media-min-xl{
         width: 80%;
         margin: 0 auto;
+    }
+    .position-contagion{
+        display: none;
+        @include media-min-xl{
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
     }
     .contagion-overall-card{
         @include media-min-md{
@@ -263,6 +284,9 @@
             text-align: center;
             @include media-min-md{
                 margin: 0;
+            }
+            @include media-min-xl{
+                z-index: 1;
             }
             .image-contagion{
                 padding: 20px 0;
@@ -293,14 +317,35 @@
             }
         }
     }
+    .position-3{
+        display: none;
+        @include media-min-xl{
+            display: block;
+            position: absolute;
+            top: 65%;
+            left: -10%;
+        }
+        @include media-min-xl-x{
+            left: -8%;
+        }
+    }
 }
 
 .symptomps-section-wrapper{
     padding: 15px;
     background-color: #FFFFFF;
+    position: relative;
     @include media-min-xl{
         width: 90%;
         margin: 0 auto;
+    }
+    .left-image{
+        display: none;
+        @include media-min-xl{
+            display: block;
+            position: absolute;
+            bottom: 10%;
+        }
     }
     .symptomps-image{
         @include media-min-lg{
@@ -312,11 +357,30 @@
             margin: 0 auto 20px;
         }
     }
+    .right-image{
+        display: none;
+        @include media-min-xl{
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 10%;
+        }
+    }
 }
 
 .intruction-section-wrapper{
     padding: 15px;
     background-color: #FFFFFF;
+    position: relative;
+    .green-corona{
+        display: none;
+        @include media-min-xl{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 22%;
+        }
+    }
     .intruction-image{
         @include media-min-md{
             width: 48%;
@@ -405,6 +469,7 @@
         }
     }
     .intruction-two{
+        // position: relative;
         @include media-min-lg-x{
             width: 80%;
             margin: 0 auto;
@@ -417,6 +482,28 @@
         }
     }
 
+    .red-corona{
+        display: none;
+        @include media-min-xl{
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom:13%;
+        }
+        @include media-min-xl-x{
+            bottom: 15%;
+        }
+    }
+
+    .green-corona-2{
+        display: none;
+        @include media-min-xl{
+            display: block;
+            position: absolute;
+            right: 2%;
+            bottom: 25%;
+        }
+    }
 }
 
 .map-section-wrapper{
@@ -519,6 +606,7 @@
 .question-section-wrapper{
     padding: 15px;
     text-align: center;
+    position: relative;
     background-color: rgba(255, 249, 249, 0.411);
     .question-section{
         @include media-min-md{
@@ -594,5 +682,25 @@
                 }
             }
         }
+    }
+}
+.footer-postion-half{
+    display: none;
+    @include media-min-xl{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        right: 0;
+        bottom: -10%;
+    }
+}
+.footer-postion-full{
+    display: none;
+    @include media-min-xl{
+        position: absolute;
+        display: block;
+        right: 8%;
+        top: 0;
     }
 }
